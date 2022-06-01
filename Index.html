@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/097058085d.js" crossorigin="anonymous"></script>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+// https://dashboard.emailjs.com/admin/account
+emailjs.init('rfE9eKEATaxewcI2l');
+})();
+</script>
+
 </head>
 
 <body>
@@ -54,7 +62,7 @@
                 <div class="QuiSuis-je ">
                     <h1>Qui suis-je ? </h1>
                     <p>
-                        Je me presente je m’appelle Kevin Quedeville , petite experiences dans la ventes de courte
+                        Je me présente je m’appelle Kevin Quedeville , petite éxperiences dans la ventes de courte
                         durée,
                         <br>
                         parti sur la logistique dans de grand groupes comme Kiabi , Renault , <br>
@@ -66,7 +74,7 @@
                 </div>
                 <div class="Objectif">
                     <h1>Objectifs</h1>
-                    <p>.Devenir independant dans les metiers de l'informatique et le web.</p>
+                    <p>.Devenir indépendant dans les métiers de l'informatique et le web.</p>
                     <p>.Pouvoir monter un site web de A à Z en comprennant le front-end & le back-end. </p>
                     <p>.Developpé des applications.</p>
                     <p>.Developppé des jeux video et jeux mobile.</p>
@@ -78,7 +86,7 @@
         <!--ecran 2-->
         <div class="ecran ecran2">
             <div class="formation">
-                <h1 class="white">FORMATION</h1>
+                <h1 class="marron">FORMATION</h1>
             </div>
             <div class="form2">
                 <h2>11 Mai 2022 - 22 juillet 2022</h2><br>
@@ -121,7 +129,7 @@
         <!--ecran 4-->
         <div class="ecran ecran4">
             <div class="Hobbies">
-                <h1 class="white">HOBBIES</h1>
+                <h1 class="rose">HOBBIES</h1>
             </div>
             <div class="cadrehobbies">
                 <li>Football deux ans en club arret pour blessure , reprise en 2022</li><br>
@@ -134,16 +142,44 @@
         <!--ecran 5-->
         <div class="ecran ecran5">
             <div class="contater">
-                <h1 class="white">Me Contacter</h1>
+                <h1 class="violet">Me Contacter</h1>
             </div>
             <div class="contact">
-                
-
+                <div id="result-form">
+                </div>
+                <div class="contain-tout">
+                <div class="form-container">
+                <form method="post" id="contact-form">
+                <div>
+                <label for="nom">Nom : *</label>
+                <input type="text" name="nom" id="nom" required minlength="3" maxlength="20">
+                <span class="error"></span>
+                </div>
+                <div>
+                <label for="email">Adresse email : *</label>
+                <input type="email" name="email" id="email" minlength="6" maxlength="50">
+                <span class="error"></span>
+                </div> 
+                <div>
+                    <label for="telephone">Téléphone :</label>
+                    <input type="text" name="telephone" id="telephone">
+                    <span class="error"></span>
+                    </div>
+                    <div>
+                    <label for="message">Message : *</label>
+                    <textarea name="message" id="message" name="message" required minlength="10" maxlength="250"></textarea>
+                    <span class="error"></span>
+                    </div>
+                    <div>
+                    <input class="btn" id="submit" type="submit" value="Envoyer">
+                    </div>
+                    </form>
+                    </div>
+                    
+                    </div>
             </div>
-
-
         </div>
-
+        <script src="email.js"></script>
 </body>
 
 </html>

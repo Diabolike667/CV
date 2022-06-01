@@ -61,9 +61,9 @@ div.Entete{
 .white {
   margin: 0;
   font-size: 45px;
-  color: #272626;
-  text-shadow: 0 1px 0 #000000, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
-      0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #000000,
+  color: #ffffff;
+  text-shadow: 0 1px 0 #000000, 0 2px 0 #cccccc, 0 3px 0 #000000,
+      0 4px 0 #cccccc, 0 5px 0 #000000, 0 6px 0 #cccccc, 0 7px 0 #000000,
       0 8px 0 #000000, 0 9px 0 #000000, 0 50px 30px rgba(0, 0, 0, 0.3);
 }
 /************************************MENU********************************************/
@@ -306,13 +306,13 @@ div.QuiSuis-je {
   border-radius: 10%;
   
 }
-.bleu {
+.marron {
   margin: 0;
   font-size: 45px;
-  color: #22237a;
-  text-shadow: 0 1px 0 #000000, 0 2px 0 #9c2222, 0 3px 0 #971e1e,
-      0 4px 0 #8a2828, 0 5px 0 #922525, 0 6px 0 #9c2121, 0 7px 0 #8d1f1f,
-      0 8px 0 #861717, 0 9px 0 #830404, 0 50px 30px rgba(248, 248, 248, 0.3);
+  color: #8adcdf;
+  text-shadow: 0 1px 0 #000000, 0 2px 0 #9c2222, 0 3px 0 #000000,
+      0 4px 0 #8a2828, 0 5px 0 #000000, 0 6px 0 #9c2121, 0 7px 0 #000000,
+      0 8px 0 #861717, 0 9px 0 #000000, 0 50px 30px rgba(0, 0, 0, 0.3);
 }
 /********************** fin ecran2 *********************************/
   /*********************************** ecran 3***************************************/
@@ -344,6 +344,14 @@ div.QuiSuis-je {
     border: 5px solid;
     border-radius: 10%;
   }
+  .bleu {
+    margin: 0;
+    font-size: 45px;
+    color: #22237a;
+    text-shadow: 0 1px 0 #ffffff, 0 2px 0 #9c2222, 0 3px 0 #ffffff,
+        0 4px 0 #8a2828, 0 5px 0 #ffffff, 0 6px 0 #9c2121, 0 7px 0 #fdfdfd,
+        0 8px 0 #861717, 0 9px 0 #ffffff, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
   /********************* fin ecran3 ************************************/
   /************************************** ecran 4*************************************/
   .ecran4 {
@@ -357,7 +365,7 @@ div.QuiSuis-je {
   .Hobbies{
     background-color: #660683e3;
     width: 90%;
-    height: 20%;
+    height: 150px;
     border: 5px solid;
     display: flex;
     justify-content: center;
@@ -372,6 +380,14 @@ div.QuiSuis-je {
     border: 5px solid;
     margin: 15%;
     border-radius: 10%;
+  }
+  .rose {
+    margin: 0;
+    font-size: 45px;
+    color: #ff00dd;
+    text-shadow: 0 1px 0 #ffffff, 0 2px 0 #9c2222, 0 3px 0 #ffffff,
+        0 4px 0 #8a2828, 0 5px 0 #ffffff, 0 6px 0 #9c2121, 0 7px 0 #f5f5f5,
+        0 8px 0 #861717, 0 9px 0 #ffffff, 0 50px 30px rgba(248, 248, 248, 0.3);
   }
   /****************************** fin ecran4 **************************/
   /************************************** ecran 5********************************/
@@ -393,12 +409,19 @@ div.QuiSuis-je {
     justify-content: center;
     align-items: center;
     align-content: center;
-    border-radius: 45%;
   }
+  .violet {
+    margin: 0;
+    font-size: 45px;
+    color: #af02ff;
+    text-shadow: 0 1px 0 #000000, 0 2px 0 #ffffff, 0 3px 0 #000000,
+        0 4px 0 #ffffff, 0 5px 0 #000000, 0 6px 0 #ffffff, 0 7px 0 #000000,
+        0 8px 0 #ffffff, 0 9px 0 #000000, 0 50px 30px rgba(248, 248, 248, 0.3);
+      }    
   .contact{
     background-color: #3a0493d7;
     width: 60%;
-    height: 40%;
+    height: 500px;
     border: 5px solid;
     display: flex;
     justify-content: center;
@@ -407,6 +430,25 @@ div.QuiSuis-je {
     margin: 2% 20%;
     border-radius: 50%;
   }
+  .contain-tout{
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    }
+    .form-container{
+    width: 50%;
+    height: 100%;
+    }
+    #contact-form{
+    width: 100%;
+    height: 100%;
+    padding: 50px 50px;
+    }
+
 /********************** fin ecran5 ****************************/
 /****************** finition *********************/
 .ecran3 h6{
