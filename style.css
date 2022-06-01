@@ -30,7 +30,7 @@
     align-content: center;
     align-items: center;
   }
-  /*****************************header et entete************************/
+  /*****************************header et entete*************************************/
 header{
   height: 217px;
   display: flex;
@@ -47,27 +47,33 @@ div.Entete{
   display: flex;
   color: black;
 }
+.sliding-middle-out {
+  display: inline-block;
+  position: relative;
+  transition-duration: 5s;
+}
 .Nom {
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
 }
-.black {
+.white {
   margin: 0;
-  font-size: 100px;
-  color: #000000;
-  text-shadow: 0 1px 0 #32312b, 0 2px 0 #32312b, 0 3px 0 #32312b,
-      0 4px 0 #32312b, 0 5px 0 #32312b, 0 6px 0 #000000, 0 7px 0 #32312b,
-      0 8px 0 #32312b, 0 9px 0 #32312b, 0 50px 30px rgba(0, 0, 0, 0.8);
+  font-size: 45px;
+  color: #272626;
+  text-shadow: 0 1px 0 #000000, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
+      0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #000000,
+      0 8px 0 #000000, 0 9px 0 #000000, 0 50px 30px rgba(0, 0, 0, 0.3);
 }
-/************************************MENU******************************************/
+/************************************MENU********************************************/
 div.Navigation{
   height: 100px;
   background-color: #8b0404;
   margin: 1% 5%;
   border:5px solid;
   padding: 0;
+  border-radius: 15%;
 }
 nav{
   height: 70px;
@@ -180,7 +186,7 @@ header nav ul {
   width: 100%;
   
 }
-/************************************  hover  **************************************/
+/************************************  hover  ****************************************/
 .hover-bg{
   color: rgb(255, 255, 255);
   transition: 1s all;
@@ -213,7 +219,7 @@ header nav ul {
   .hover-bg:hover{   
     opacity: 0.99; 
   }
-/********************************** end hover ***************************************/
+/********************************** fin hover *****************************************/
   /***************************************** ecran 1 **********************************/
   .ecran1 {
     width: 100%;
@@ -228,7 +234,7 @@ header nav ul {
   }
   /************Partie avec le NFT **************/
 .photo {
-  border: 5px solid #691717;
+  border: 5px solid #691717cc;
   background-image: url("images/FB_IMG_1643425071732.jpg");
   background-size: cover;
   width: 400px;
@@ -242,20 +248,20 @@ header nav ul {
   }
   /*************QUI SUIS jE ?*********************/
 div.QuiSuis-je {
-  background-color: #940000;
+  background-color: #940000bc;
   border-radius: 15%;
   border:5px solid;
-  width: 650px;
-  margin: 2%;
-  padding: 2%;
+  width: 700px;
+  height: 450px;
+  margin-right: 400px;
   }
 
   /******************Obejtifs*********************/
   div.Objectif {
-    background-color: #940000;
+    background-color: #940000bc;
     border: 5px solid;
-    margin: 0;
-    border-radius: 20%;
+    margin-top: 40px;
+    border-radius: 25%;
     width: 110%;
     height: 30%;
   }
@@ -263,13 +269,13 @@ div.QuiSuis-je {
     height: 100vh;
     width: 100%;
     background-color: aqua;
-  }
-  
-  .position1erpage{
     display: flex;
-    flex-direction: column;
-
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
   }
+ 
+  /****************************** fin ecran1 **************************************/
   /******************************************* ecran 2**********************************/
   .ecran2 {
     width: 100%;
@@ -277,13 +283,13 @@ div.QuiSuis-je {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 10%;  
+    padding: 40px;  
     background-image: url("../images/analytics-3088958_640.jpg");
     background-size: cover;
   }
 .formation{
   background-color: #120556e0;
-  width: 95%;
+  width: 90%;
   height: 15%;
   display: flex;
   align-items: center;
@@ -291,16 +297,24 @@ div.QuiSuis-je {
   justify-content: center;
   margin: 2% 5%;
   border: 5px solid;
-  border-radius: 35%;
 }
 .form2 {
   background-color: #00159ee0;
-  width: 95%;
-  height: 90%;
+  width: 100%;
+  height: 55%;
   border: 5px solid;
-  border-radius: 15%;
+  border-radius: 10%;
   
 }
+.bleu {
+  margin: 0;
+  font-size: 45px;
+  color: #22237a;
+  text-shadow: 0 1px 0 #000000, 0 2px 0 #9c2222, 0 3px 0 #971e1e,
+      0 4px 0 #8a2828, 0 5px 0 #922525, 0 6px 0 #9c2121, 0 7px 0 #8d1f1f,
+      0 8px 0 #861717, 0 9px 0 #830404, 0 50px 30px rgba(248, 248, 248, 0.3);
+}
+/********************** fin ecran2 *********************************/
   /*********************************** ecran 3***************************************/
   .ecran3 {
     width: 100%;
@@ -311,9 +325,9 @@ div.QuiSuis-je {
     flex-direction: column;
   }
   .Experiences{
-    background-color: #53889fdf;
+    background-color: #b1adadc6;
     width: 90%;
-    height: 90px;
+    height: 200px;
     border: 5px solid;
     display: flex;
     justify-content: center;
@@ -321,15 +335,16 @@ div.QuiSuis-je {
     align-content: center;
     margin: 2% 5% ;
   }
+
   .Exper2{
     background-color: #b1adadc6;
     width: 75%;
-    height: 40%;
-    margin: 13% ;
+    height: 650px;
+    margin: 200px ;
     border: 5px solid;
-    
+    border-radius: 10%;
   }
-  
+  /********************* fin ecran3 ************************************/
   /************************************** ecran 4*************************************/
   .ecran4 {
     width: 100%;
@@ -342,7 +357,7 @@ div.QuiSuis-je {
   .Hobbies{
     background-color: #660683e3;
     width: 90%;
-    height: 25%;
+    height: 20%;
     border: 5px solid;
     display: flex;
     justify-content: center;
@@ -353,11 +368,12 @@ div.QuiSuis-je {
   .cadrehobbies{
     background-color: #9d05c3d1;
     width: 70%;
-    height: 65%;
+    height: 60%;
     border: 5px solid;
     margin: 15%;
+    border-radius: 10%;
   }
-  
+  /****************************** fin ecran4 **************************/
   /************************************** ecran 5********************************/
   .ecran5 {
     width: 100%;
@@ -391,3 +407,17 @@ div.QuiSuis-je {
     margin: 2% 20%;
     border-radius: 50%;
   }
+/********************** fin ecran5 ****************************/
+/****************** finition *********************/
+.ecran3 h6{
+  color: white;
+}
+.ecran2 h2{
+  color: white;
+}
+.ecran2 p{
+  color: white;
+}
+.ecran1 p{
+  color: white;
+}
